@@ -1,0 +1,30 @@
+.ocean {
+  height: 500px;
+  background-image: url(../img/boat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  position: relative;
+}
+.ocean h2 {
+  border: 1px solid red;
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  height: 30%;
+  text-align: right;
+
+  //   transform: translateX(0);
+}
+.ocean p {
+  border: 1px solid rgb(47, 0, 255);
+  padding: 0 2%;
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  bottom: 0;
+
+  right: 0;
+  //   transform: translateX(100%);
+}

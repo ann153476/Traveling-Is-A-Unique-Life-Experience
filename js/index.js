@@ -1,1 +1,2 @@
-import "./test.js";
+import "./paralax.js";
+import "./modal.js";

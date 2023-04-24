@@ -4,11 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Traveling Is A</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="icon" href="./img/ico.png" />
   </head>
   <body>
-    <!-- без паршалов и npm cмотреть в браузере GO LIVE -->
+    <header>
+      <h1>Traveling Is A Unique Life Experience</h1>
+    </header>
+    <section class="hero">
+      <!-- <img class="Mount" src="./img/Mount.jpg" /> -->
+      <img class="balloon" src="./img/balloon.png" alt="balloon" />
+      <div class="hero_box">
+        <h1 id="op">Traveling Is A Unique Life Experience</h1>
+        <p id="op">
+          Whether you wish to fly over deserts or ruined cities, we offer unique
+          once-in-a-lifetime hot air balloon adventure travel experiences.
+        </p>
+        <button class="learn__more__btn" type="button" data-modal-open>
+          LEARN MORE
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <ul class="go">
+        <li>
+          <div class="hole"></div>
+          <div class="circle">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-airplane"></use>
+            </svg>
+          </div>
+          <p>Lorem, ipsumt amet consectetur adipisicing elit. Expedita</p>
+        </li>
+        <li>
+          <div class="hole"></div>
+          <div class="circle">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-luggage"></use>
+            </svg>
+          </div>
+          <p>voluptatibus, ea debitis inventore sequi cumque magnam. In</p>
+        </li>
+        <li>
+          <div class="hole"></div>
+          <div class="circle">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-local"></use>
+            </svg>
+          </div>
+          <p>quibusdam aliquam porro fugit asperiores culpa inventore</p>
+        </li>
+        <li>
+          <div class="hole"></div>
+          <div class="circle">
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-suitcase"></use>
+            </svg>
+          </div>
+          <p>
+            aliquid eum libero repellat recusandae explicabo, nam reprehenderit
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="project_experience">
+      <h2>PROJECT EXPERIENCE</h2>
+      <div class="image__block">
+        <img src="./img/m1.jpg" alt="img" /><img
+          src="./img/m2.jpg"
+          alt="img"
+        /><img src="./img/m3.jpg" alt="img" />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit
+        qui incidunt ipsum repudiandae, unde at illum esse placeat aliquid error
+        beatae, veritatis cumque porro dicta quibusdam consequuntur? Velit quas,
+        sit delectus voluptate expedita provident, error aliquam, est reiciendis
+        perspiciatis veritatis eveniet! Assumenda possimus provident, numquam
+        praesentium voluptatum ex ducimus harum, vero asperiores perferendis
+        exercitationem. Sunt distinctio repudiandae voluptatem nobis.
+      </p>
+      <button class="learn__more__btn" type="button" data-modal-open>
+        LEARN MORE
+      </button>
+    </section>
+    <section class="destinations">
+      <h2>Destinations to Inspire Adventure</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        dignissimos autem voluptatum repellendus magnam nulla voluptate iure at
+        laboriosam velit reiciendis quibusdam, sapiente cupiditate error
+        tenetur. Modi itaque ipsum impedit et dolorem sed! Adipisci voluptatibus
+        culpa nobis fugiat! Sed, mollitia.
+      </p>
+      <ul class="destinations__cards">
+        <li>
+          <img src="./img/d1.jpg" alt="img" />
+          <div>
+            <h3>Kuala Lumpur</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              aliquam error est impedit tempora neque provident consequuntur rem
+              deserunt hic!
+            </p>
+          </div>
+          <button class="more" type="button">more</button>
+        </li>
+        <li>
+          <img src="./img/d2.jpg" alt="img" />
+          <div>
+            <h3>New Caledonia</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              adipisci incidunt ipsam excepturi maiores nemo tempore modi
+              placeat voluptatibus officiis.
+            </p>
+          </div>
+          <button class="more" type="button">more</button>
+        </li>
+        <li>
+          <img src="./img/d3.jpg" alt="img" />
+          <div>
+            <h3>BALI</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+              ex quaerat velit maxime, laudantium recusandae ratione quas
+              voluptatum unde. Optio.
+            </p>
+          </div>
+          <button class="more" type="button">more</button>
+        </li>
+        <li>
+          <img src="./img/d4.jpg" alt="img" />
+          <div>
+            <h3>Indonesia</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              error labore voluptatum praesentium, quo unde nam esse et iusto
+              rerum!
+            </p>
+          </div>
+          <button class="more" type="button">more</button>
+        </li>
+      </ul>
+    </section>
+    <section class="ocean">
+      <h2 id="text__move">The Air Smells Ocean</h2>
+      <p id="text__move">
+        Lorem ipsum dolor. Maiores, repellendus consectetur! Voluptatibus
+        incidunt, sunt possimus sint!
+      </p>
+    </section>
+    <!--------------modal----------------->
+    <div class="learn__more__modal is-hidden" data-modal>
+      <div class="modal__box">
+        <button class="x" type="button" data-modal-close>
+          <svg class="svg__x">
+            <use href="./img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut
+          quaerat repellendus reprehenderit adipisci natus pariatur laboriosam
+          doloribus voluptates! Facere cumque numquam deserunt fuga doloremque
+          recusandae amet facilis qui provident.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ut
+          quaerat repellendus reprehenderit adipisci natus pariatur laboriosam
+          doloribus voluptates! Facere cumque numquam deserunt fuga doloremque
+          recusandae amet facilis qui provident.
+        </p>
+      </div>
+    </div>
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>

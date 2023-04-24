@@ -75,6 +75,8 @@ main {
 }
 
 body {
+  overflow-x: hidden;
+  padding-top: 8vh;
   line-height: 1;
 }
 
@@ -92,7 +94,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -104,4 +106,7 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+section {
+  width: 100%;
 }

@@ -1,0 +1,14 @@
+:root {
+  --my_green: rgb(150, 219, 201);
+  --my_pink: rgb(255, 192, 203);
+
+  --turns-slow: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+body {
+  font-family: "Castoro Titling", cursive;
+  background-color: var(--my_green);
+}
+h2 {
+  font-size: 30px;
+}
