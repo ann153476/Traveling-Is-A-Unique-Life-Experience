@@ -8,7 +8,13 @@
 body {
   font-family: "Castoro Titling", cursive;
   background-color: var(--my_green);
+  overflow-x: hidden;
+}
+section {
+  width: 100vw;
 }
 h2 {
   font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
 }

@@ -1,0 +1,65 @@
+.mountains {
+  background-color: white;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.mon__img__box {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+.mon__img__box li {
+  height: 350px;
+  background-size: cover;
+  display: flex;
+}
+.mon__img__box li:nth-child(1) {
+  background-color: aqua;
+  background-image: url(../img/mo1.jpg);
+  align-items: flex-end;
+}
+.mon__img__box li:nth-child(2) {
+  align-items: flex-start;
+  background-color: royalblue;
+  background-image: url(../img/mo2.png);
+}
+.moun__box {
+  background-color: rgba(0, 0, 0, 0.468);
+  color: white;
+  width: 100%;
+  height: 175px;
+  padding: 10px;
+}
+.moun__box p {
+  margin: 15px 5px;
+}
+.moun__box p:nth-child(1) {
+  font-size: 15px;
+  color: aqua;
+}
+.moun__box p:nth-child(2) {
+  font-size: 12px;
+}
+.mountains > div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin: 0;
+}
+.mountains > div p:nth-child(1) {
+  font-weight: bold;
+}
+.mountains > div,
+.mon__img__box {
+  width: 350px;
+  height: 350px;
+}

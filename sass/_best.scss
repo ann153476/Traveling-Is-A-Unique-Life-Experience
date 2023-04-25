@@ -1,0 +1,35 @@
+.best {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.best h2 {
+  color: white;
+}
+.best p {
+  margin: 20px 0;
+  color: var(--my_green);
+}
+.best__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+.best__box li {
+  width: 150px;
+  height: 150px;
+  background-color: var(--my_green);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.best__box p {
+  color: black;
+}
+.best__box p:first-child {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
