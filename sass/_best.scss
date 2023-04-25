@@ -1,6 +1,6 @@
 .best {
   background-color: black;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 .best h2 {
@@ -14,22 +14,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 10%;
+
+  margin: 0 auto;
+
+  height: 350px;
+  @media screen and (max-width: 767px) {
+    width: 350px;
+    flex-wrap: wrap;
+  }
 }
 .best__box li {
-  width: 150px;
-  height: 150px;
+  margin: 10px;
+  width: 140px;
+  height: 140px;
   background-color: var(--my_green);
   border-radius: 20px;
   padding: 10px;
-  margin: 20px;
 }
 .best__box p {
   color: black;
 }
 .best__box p:first-child {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
-  margin-bottom: 10px;
 }

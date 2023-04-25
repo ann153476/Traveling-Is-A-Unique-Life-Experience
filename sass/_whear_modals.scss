@@ -1,0 +1,68 @@
+.check__it {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: var(--turns-slow);
+}
+.arrow {
+  transition: var(--turns-slow);
+}
+.check__it:hover .arrow {
+  transform: translateX(10px);
+}
+.check__it p {
+  display: block;
+}
+.f__box {
+  background-image: url(../img/modalF.jpg);
+}
+.f__btn {
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  transition: var(--turns-slow);
+  position: relative;
+  overflow: hidden;
+}
+.f__btn svg {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--turns-slow);
+}
+.yes {
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.f__btn:hover {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.534);
+  border: 3px solid white;
+}
+.f__btn:hover .f__svg {
+  fill: white;
+}
+.f__btn:hover .yes {
+  color: white;
+}
+.modal__text {
+  background-color: rgba(255, 255, 255, 0.362);
+  padding: 10px;
+  border-radius: 20px;
+}
+////////////////////
+.s__box {
+  background-image: url(../img/modalS.jpg);
+}
+///////////////////
+.m__box {
+  background-image: url(../img/modalM.jpg);
+}

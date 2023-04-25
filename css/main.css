@@ -261,9 +261,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 @media screen and (max-width: 500px) {
   .go li {
@@ -276,7 +276,7 @@ h2 {
   height: 60px;
   background-color: var(--my_green);
   border-radius: 50%;
-  margin: auto;
+  margin: 15px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ h2 {
   border-radius: 50%;
 }
 
-.learn__more__modal {
+.backdrop {
   visibility: visible;
   pointer-events: initial;
   position: fixed;
@@ -336,6 +336,7 @@ h2 {
 }
 
 .svg__x {
+  pointer-events: none;
   width: 40px;
   height: 40px;
   stroke: black;
@@ -346,6 +347,8 @@ h2 {
 .x:hover .svg__x {
   scale: 1.5;
   stroke: var(--my_green);
+  background-color: white;
+  border-radius: 20px;
 }
 
 .modal__box {
@@ -359,6 +362,17 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 50px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project_experience {
@@ -546,7 +560,7 @@ h2 {
 
 .best {
   background-color: black;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -569,18 +583,24 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0 10%;
+  margin: 0 auto;
+  height: 350px;
+}
+@media screen and (max-width: 767px) {
+  .best__box {
+    width: 350px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .best__box li {
-  width: 150px;
-  height: 150px;
+  margin: 10px;
+  width: 140px;
+  height: 140px;
   background-color: var(--my_green);
   border-radius: 20px;
   padding: 10px;
-  margin: 20px;
 }
 
 .best__box p {
@@ -588,9 +608,8 @@ h2 {
 }
 
 .best__box p:first-child {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
-  margin-bottom: 10px;
 }
 
 .mountains {
@@ -699,6 +718,11 @@ h2 {
   height: 350px;
 }
 
+.about__agency {
+  background-color: var(--my_pink);
+  padding: 10px 0;
+}
+
 .about__agency > div {
   width: 300px;
   height: 300px;
@@ -725,4 +749,178 @@ h2 {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   border-radius: 20px;
+}
+
+.where {
+  padding: 10px;
+  background-color: white;
+}
+
+.where__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media screen and (max-width: 767px) {
+  .where__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.where__box li {
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0;
+  padding-top: 50px;
+  width: 200px;
+  height: 350px;
+  background-size: cover;
+}
+
+.where__box li:nth-child(1) {
+  background-image: url(../img/w1.jpg);
+}
+
+.where__box li:nth-child(2) {
+  background-image: url(../img/w2.jpg);
+}
+
+.where__box li:nth-child(3) {
+  background-image: url(../img/w3.jpg);
+}
+
+.where__box button {
+  background-color: rgba(0, 0, 0, 0.442);
+  border: 3px solid var(--my_green);
+  color: var(--my_green);
+  border-radius: 20px;
+  width: 90px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+.where__box button:hover {
+  background-color: var(--my_green);
+  width: 130px;
+  color: white;
+}
+
+.w__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.345);
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+.where__box li:hover .w__overlay {
+  top: 100%;
+}
+
+.check__it {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+.arrow {
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+.check__it:hover .arrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.check__it p {
+  display: block;
+}
+
+.f__box {
+  background-image: url(../img/modalF.jpg);
+}
+
+.f__btn {
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+  position: relative;
+  overflow: hidden;
+}
+
+.f__btn svg {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+.yes {
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.f__btn:hover {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.534);
+  border: 3px solid white;
+}
+
+.f__btn:hover .f__svg {
+  fill: white;
+}
+
+.f__btn:hover .yes {
+  color: white;
+}
+
+.modal__text {
+  background-color: rgba(255, 255, 255, 0.362);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.s__box {
+  background-image: url(../img/modalS.jpg);
+}
+
+.m__box {
+  background-image: url(../img/modalM.jpg);
 }/*# sourceMappingURL=main.css.map */

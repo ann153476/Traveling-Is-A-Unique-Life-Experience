@@ -13,7 +13,6 @@
       <h1>Traveling Is A Unique Life Experience</h1>
     </header>
     <section class="hero">
-      <!-- <img class="Mount" src="./img/Mount.jpg" /> -->
       <img class="balloon" src="./img/balloon.png" alt="balloon" />
       <div class="hero_box">
         <h1 id="op">Traveling Is A Unique Life Experience</h1>
@@ -21,7 +20,12 @@
           Whether you wish to fly over deserts or ruined cities, we offer unique
           once-in-a-lifetime hot air balloon adventure travel experiences.
         </p>
-        <button class="learn__more__btn" type="button" data-modal-open>
+        <button
+          id="learn_more"
+          class="learn__more__btn"
+          type="button"
+          data-modal-open
+        >
           LEARN MORE
         </button>
       </div>
@@ -36,7 +40,7 @@
               <use href="./img/symbol-defs.svg#icon-airplane"></use>
             </svg>
           </div>
-          <p>Lorem, ipsumt . Expedita</p>
+          <p>Lorem, ipsumt inventore. Expedita cumque magnam</p>
         </li>
         <li>
           <div class="hole"></div>
@@ -87,7 +91,12 @@
         ducimus harum, vero asperiores perferendis exercitationem. Sunt
         distinctio repudiandae voluptatem nobis.
       </p>
-      <button class="learn__more__btn" type="button" data-modal-open>
+      <button
+        id="learn_more"
+        class="learn__more__btn"
+        type="button"
+        data-modal-open
+      >
         LEARN MORE
       </button>
     </section>
@@ -103,7 +112,7 @@
         <li>
           <img src="./img/d1.jpg" alt="img" />
           <div>
-            <h3>Kuala Lumpur</h3>
+            <h3>Asia</h3>
             <p>
               Lorem ipsum, dolor sit . Amet aliquam error est impedit tempora
               neque provident consequuntur rem deserunt hic!
@@ -114,7 +123,7 @@
         <li>
           <img src="./img/d2.jpg" alt="img" />
           <div>
-            <h3>New Caledonia</h3>
+            <h3>Europe</h3>
             <p>
               Lorem ipsum dolor sit . Explicabo adipisci incidunt ipsam
               excepturi maiores nemo tempore modi placeat voluptatibus officiis.
@@ -125,7 +134,7 @@
         <li>
           <img src="./img/d3.jpg" alt="img" />
           <div>
-            <h3>BALI</h3>
+            <h3>Australia</h3>
             <p>
               Lorem ipsum dolor, sit . Deserunt ex quaerat velit maxime,
               laudantium recusandae ratione quas voluptatum unde. Optio.
@@ -211,8 +220,13 @@
           volutpat maecenas volutpat blandit.
         </p>
         <div>
-          <button class="learn__more__btn" type="button" data-modal-open>
-            learn more
+          <button
+            id="learn_more"
+            class="learn__more__btn"
+            type="button"
+            data-modal-open
+          >
+            LEARN MORE
           </button>
         </div>
       </div>
@@ -232,10 +246,41 @@
         </div>
       </div>
     </section>
+    <section class="where">
+      <h2>Where you want ?</h2>
+      <ul class="where__box">
+        <li>
+          <div class="w__overlay"></div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <button id="forest" type="button" data-modal-open>choose tour</button>
+        </li>
+        <li>
+          <div class="w__overlay"></div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <button id="sea" type="button" data-modal-open>choose tour</button>
+        </li>
+        <li>
+          <div class="w__overlay"></div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <button id="mountain" type="button" data-modal-open>
+            choose tour
+          </button>
+        </li>
+      </ul>
+    </section>
     <!--------------modal----------------->
-    <div class="learn__more__modal is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-learn-more>
       <div class="modal__box">
-        <button class="x" type="button" data-modal-close>
+        <button id="learn_more" class="x" type="button" data-modal-close>
           <svg class="svg__x">
             <use href="./img/symbol-defs.svg#icon-x"></use>
           </svg>
@@ -251,6 +296,88 @@
           quaerat repellendus reprehenderit adipisci natus pariatur laboriosam
           doloribus voluptates! Facere cumque numquam deserunt fuga doloremque
           recusandae amet facilis qui provident.
+        </p>
+      </div>
+    </div>
+    <!---------------->
+    <div class="backdrop is-hidden" data-modal-forest>
+      <div class="f__box modal__box">
+        <button id="forest" class="x" type="button" data-modal-close>
+          <svg class="svg__x">
+            <use href="./img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div class="check__it">
+          <p>check it?</p>
+          <svg class="arrow" width="30" height="30">
+            <use href="./img/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+          <button class="f__btn" type="button">
+            <svg class="f__svg" width="30" height="30">
+              <use href="./img/symbol-defs.svg#icon-forest"></use>
+            </svg>
+            <p class="yes">yes</p>
+          </button>
+        </div>
+
+        <p class="modal__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+          molestiae omnis distinctio quisquam quae provident culpa unde eum
+          iusto minus!
+        </p>
+      </div>
+    </div>
+    <!--------------->
+    <div class="backdrop is-hidden" data-modal-sea>
+      <div class="s__box modal__box">
+        <button id="sea" class="x" type="button" data-modal-close>
+          <svg class="svg__x">
+            <use href="./img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div class="check__it">
+          <p>check it?</p>
+          <svg class="arrow" width="30" height="30">
+            <use href="./img/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+          <button class="f__btn" type="button">
+            <svg class="f__svg" width="30" height="30">
+              <use href="./img/symbol-defs.svg#icon-sea"></use>
+            </svg>
+            <p class="yes">yes</p>
+          </button>
+        </div>
+        <p class="modal__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+          molestiae omnis distinctio quisquam quae provident culpa unde eum
+          iusto minus!
+        </p>
+      </div>
+    </div>
+    <!-------------->
+    <div class="backdrop is-hidden" data-modal-mountain>
+      <div class="m__box modal__box">
+        <button id="mountain" class="x" type="button" data-modal-close>
+          <svg class="svg__x">
+            <use href="./img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <div class="check__it">
+          <p>check it?</p>
+          <svg class="arrow" width="30" height="30">
+            <use href="./img/symbol-defs.svg#icon-arrow"></use>
+          </svg>
+          <button class="f__btn" type="button">
+            <svg class="f__svg" width="30" height="30">
+              <use href="./img/symbol-defs.svg#icon-mountain"></use>
+            </svg>
+            <p class="yes">yes</p>
+          </button>
+        </div>
+        <p class="modal__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+          molestiae omnis distinctio quisquam quae provident culpa unde eum
+          iusto minus!
         </p>
       </div>
     </div>

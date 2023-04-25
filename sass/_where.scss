@@ -1,0 +1,58 @@
+.where {
+  padding: 10px;
+  background-color: white;
+}
+.where__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.where__box li {
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0;
+  padding-top: 50px;
+  width: 200px;
+  height: 350px;
+  background-size: cover;
+}
+.where__box li:nth-child(1) {
+  background-image: url(../img/w1.jpg);
+}
+.where__box li:nth-child(2) {
+  background-image: url(../img/w2.jpg);
+}
+.where__box li:nth-child(3) {
+  background-image: url(../img/w3.jpg);
+}
+.where__box button {
+  background-color: rgba(0, 0, 0, 0.442);
+  border: 3px solid var(--my_green);
+  color: var(--my_green);
+  border-radius: 20px;
+  width: 90px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  transition: var(--turns-slow);
+}
+.where__box button:hover {
+  background-color: var(--my_green);
+  width: 130px;
+  color: white;
+}
+.w__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.345);
+  transition: var(--turns-slow);
+}
+.where__box li:hover .w__overlay {
+  top: 100%;
+}
