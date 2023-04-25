@@ -35,7 +35,7 @@
   color: var(--my_green);
   border-radius: 20px;
   width: 90px;
-  height: 30px;
+  height: 60px;
   display: block;
   margin: 0 auto;
   transition: var(--turns-slow);
@@ -50,9 +50,13 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.345);
+  background-color: black;
+  opacity: 0.7;
   transition: var(--turns-slow);
 }
 .where__box li:hover .w__overlay {
   top: 100%;
+}
+.f__svg {
+  pointer-events: none;
 }

@@ -17,7 +17,7 @@
   background-color: transparent;
   border: 3px solid var(--my_pink);
   border-radius: 20px;
-  width: 70px;
+  width: 130px;
   height: 30px;
   color: var(--my_pink);
   font-size: 17px;
@@ -25,7 +25,10 @@
   transition: var(--turns-slow);
 }
 .more:hover {
-  width: 120px;
+  width: 200px;
   background-color: var(--my_pink);
   color: white;
+}
+.more:hover .destinations__cards li {
+  background-color: red;
 }

@@ -444,7 +444,7 @@ h2 {
   background-color: transparent;
   border: 3px solid var(--my_pink);
   border-radius: 20px;
-  width: 70px;
+  width: 130px;
   height: 30px;
   color: var(--my_pink);
   font-size: 17px;
@@ -454,9 +454,13 @@ h2 {
 }
 
 .more:hover {
-  width: 120px;
+  width: 200px;
   background-color: var(--my_pink);
   color: white;
+}
+
+.more:hover .destinations__cards li {
+  background-color: red;
 }
 
 .destinations {
@@ -490,6 +494,7 @@ h2 {
 }
 
 .destinations__cards li {
+  position: relative;
   width: 250px;
   height: 450px;
   background-color: white;
@@ -510,12 +515,15 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
 }
 
 .destinations__cards h3 {
   margin: 15px 0;
   font-weight: bold;
   font-size: 20px;
+  pointer-events: none;
 }
 
 .destinations__cards img {
@@ -527,6 +535,31 @@ h2 {
      object-fit: cover;
   border-radius: 20px;
   margin: 0;
+  pointer-events: none;
+}
+
+#ok {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90px;
+  opacity: 0;
+}
+
+.chosen,
+.destinations__cards li:hover {
+  -webkit-box-shadow: 3px 3px 3px;
+          box-shadow: 3px 3px 3px;
+}
+
+.chosen #ok {
+  opacity: 1;
+}
+
+.chosen .more {
+  width: 200px;
+  background-color: var(--my_pink);
+  color: white;
 }
 
 .ocean {
@@ -719,7 +752,7 @@ h2 {
 }
 
 .about__agency {
-  background-color: var(--my_pink);
+  background-color: white;
   padding: 10px 0;
 }
 
@@ -806,7 +839,7 @@ h2 {
   color: var(--my_green);
   border-radius: 20px;
   width: 90px;
-  height: 30px;
+  height: 60px;
   display: block;
   margin: 0 auto;
   -webkit-transition: var(--turns-slow);
@@ -824,13 +857,18 @@ h2 {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.345);
+  background-color: black;
+  opacity: 0.7;
   -webkit-transition: var(--turns-slow);
   transition: var(--turns-slow);
 }
 
 .where__box li:hover .w__overlay {
   top: 100%;
+}
+
+.f__svg {
+  pointer-events: none;
 }
 
 .check__it {
@@ -923,4 +961,119 @@ h2 {
 
 .m__box {
   background-image: url(../img/modalM.jpg);
+}
+
+.choice {
+  height: 800px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/sea.jpg);
+  background-size: cover;
+}
+
+.choice__box {
+  background-color: white;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+  border: 3px solid var(--my_green);
+  border-radius: 20px;
+}
+
+.choice__box p {
+  margin: 5px;
+}
+
+#to,
+#to-way {
+  border-bottom: 5px dotted black;
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 15px;
+}
+
+#to {
+  margin-left: auto;
+  background-color: var(--my_green);
+}
+
+#to-way {
+  background-color: var(--my_pink);
+}
+
+form {
+  margin: 15px 0;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid black;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+
+.submit {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid var(--my_green);
+  color: var(--my_green);
+  display: block;
+  margin: 20px auto;
+  -webkit-transition: var(--turns-slow);
+  transition: var(--turns-slow);
+}
+
+#submit:hover {
+  background-color: var(--my_green);
+  color: white;
+}
+
+.call__bac {
+  width: 300px;
+  height: 400px;
+  padding: 60px 30px;
+}
+
+#call__text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.call__bac p {
+  line-height: 1.5;
+  color: var(--my_pink);
+  font-size: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -15,6 +15,7 @@
   }
 }
 .destinations__cards li {
+  position: relative;
   width: 250px;
   height: 450px;
   background-color: white;
@@ -26,11 +27,14 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  transition: var(--turns-slow);
 }
+
 .destinations__cards h3 {
   margin: 15px 0;
   font-weight: bold;
   font-size: 20px;
+  pointer-events: none;
 }
 .destinations__cards img {
   display: block;
@@ -40,4 +44,23 @@
   object-fit: cover;
   border-radius: 20px;
   margin: 0;
+  pointer-events: none;
+}
+#ok {
+  position: absolute;
+  object-fit: contain;
+  width: 90px;
+  opacity: 0;
+}
+.chosen,
+.destinations__cards li:hover {
+  box-shadow: 3px 3px 3px;
+}
+.chosen #ok {
+  opacity: 1;
+}
+.chosen .more {
+  width: 200px;
+  background-color: var(--my_pink);
+  color: white;
 }

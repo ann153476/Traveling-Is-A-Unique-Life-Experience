@@ -6,6 +6,7 @@
     modalForest: document.querySelector("[data-modal-forest]"),
     modalSea: document.querySelector("[data-modal-sea]"),
     modalMountain: document.querySelector("[data-modal-mountain]"),
+    modalCall: document.querySelector("[data-modal-call]"),
   };
 
   refs.openModalBtn.forEach((card) =>
@@ -16,19 +17,23 @@
   );
 
   function toggleModal(e) {
-    console.log(e.target, "<<<id");
+    const esc = document.getElementById("esc");
+    esc.play();
     switch (e.target.id) {
       case "learn_more":
         refs.modalLearnMore.classList.toggle("is-hidden");
         break;
-      case "forest":
+      case "f":
         refs.modalForest.classList.toggle("is-hidden");
         break;
-      case "sea":
+      case "s":
         refs.modalSea.classList.toggle("is-hidden");
         break;
-      case "mountain":
+      case "m":
         refs.modalMountain.classList.toggle("is-hidden");
+        break;
+      case "submit":
+        refs.modalCall.classList.toggle("is-hidden");
         break;
 
       default:

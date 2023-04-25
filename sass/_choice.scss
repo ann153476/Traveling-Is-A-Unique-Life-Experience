@@ -1,0 +1,63 @@
+.choice {
+  height: 800px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/sea.jpg);
+  background-size: cover;
+}
+.choice__box {
+  background-color: white;
+  padding: 20px;
+  width: 350px;
+  height: 450px;
+  border: 3px solid var(--my_green);
+  border-radius: 20px;
+}
+.choice__box p {
+  margin: 5px;
+}
+#to,
+#to-way {
+  border-bottom: 5px dotted black;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15px;
+}
+#to {
+  margin-left: auto;
+  background-color: var(--my_green);
+}
+#to-way {
+  background-color: var(--my_pink);
+}
+form {
+  margin: 15px 0;
+}
+input {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid black;
+  padding-left: 25px;
+  border-radius: 20px;
+}
+.submit {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid var(--my_green);
+  color: var(--my_green);
+  display: block;
+  margin: 20px auto;
+  transition: var(--turns-slow);
+}
+#submit:hover {
+  background-color: var(--my_green);
+  color: white;
+}
